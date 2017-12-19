@@ -57,3 +57,13 @@ def player_numbers(str)
 
 end
 end
+
+
+ def player_stats(str)
+   if game_hash[:home][:players][str] == nil
+     game_hash[:away][:players][str]
+   else 
+     game_hash[:home][:players][str]
+   end
+ end
+ 

@@ -39,4 +39,3 @@ def team_colors(str)
      empty.push(game_hash[:home][:team_names], game_hash[:away][:team_names])
      empty
    end
-   

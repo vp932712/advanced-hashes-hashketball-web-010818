@@ -22,3 +22,11 @@ def shoe_size(str)
     game_hash[:home][:players][str][:shoe]
   end
 end
+
+def team_colors(str)
+   if str == "Brooklyn Nets"
+     "Black", "White"
+   else
+     "Turquoise", "Purple"
+   end
+ end

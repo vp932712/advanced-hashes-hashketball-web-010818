@@ -18,7 +18,7 @@ end
 def shoe_size(str)
   if game_hash[:home][:players][str] == nil
     game_hash[:away][:players][str][:shoe]
-  else 
+  else
     game_hash[:home][:players][str][:shoe]
   end
 end

@@ -54,6 +54,6 @@ def player_numbers(str)
    empty.push(game_hash[:away][:players][key][:number])
    end
    empty
-   
+
 end
 end

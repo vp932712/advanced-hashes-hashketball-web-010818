@@ -31,3 +31,11 @@ def team_colors(str)
      
    end
  end
+
+
+ 
+   def team_names()
+     empty = []
+     empty.push(game_hash[:home][:team_names], game_hash[:away][:team_names])
+   end
+   

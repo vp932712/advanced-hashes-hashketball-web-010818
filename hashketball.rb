@@ -25,8 +25,8 @@ end
 
 def team_colors(str)
    if str == "Brooklyn Nets"
-     "Black", "White"
+     game_hash[:home][:colors].join(", ")
    else
-     "Turquoise", "Purple"
+     game_hash[:away][:colors].join(", ")
    end
  end

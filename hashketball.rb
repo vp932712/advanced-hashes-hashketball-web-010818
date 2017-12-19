@@ -66,4 +66,24 @@ end
      game_hash[:home][:players][str]
    end
  end
- 
+
+
+ def big_shoe_rebounds()
+   biggest = 0 
+   rebounds = 0 
+   game_hash[:home][:players].each do |key, value|
+     if  game_hash[:home][:players][key][:shoe]> biggest
+       biggest = game_hash[:home][:players][key][:shoe]
+       rebounds = game_hash[:home][:players][key][:rebounds]
+     end
+     
+   end
+   game_hash[:away][:players].each do |key, value|
+     if game_hash[:away][:players][key][:shoe]> biggest
+       biggest = game_hash[:away][:players][key][:shoe]
+       rebounds = game_hash[:away][:players][key][:rebounds]
+       
+     end
+   end
+   rebounds
+ end

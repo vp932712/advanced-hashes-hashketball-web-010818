@@ -8,5 +8,6 @@ end
 
 
 def num_points_scored(str)
-game_hash[:home][:players][str][:points]
+game_hash[:away][:players][str][:points]
+
 end

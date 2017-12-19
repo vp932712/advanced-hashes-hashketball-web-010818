@@ -8,6 +8,11 @@ end
 
 
 def num_points_scored(str)
+  if game_hash[:home][:players][str] == nil
 game_hash[:away][:players][str][:points]
-
+else 
+  game_hash[:home][:players][str][:points]
 end
+end
+ 
+ 

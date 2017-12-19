@@ -5,3 +5,8 @@ hash = {:home => {:team_name => "Brooklyn Nets", :colors => ["Black", "White"], 
 hash
 
 end
+
+
+def num_points_scored(str)
+game_hash[:home][:players][str][:points]
+end

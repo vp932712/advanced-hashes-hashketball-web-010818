@@ -40,3 +40,20 @@ def team_colors(str)
 
 empty.push(game_hash[:home][:team_name],game_hash[:away][:team_name] )
 end
+
+
+def player_numbers(str)
+  empty = []
+  if str == "Brooklyn Nets"
+  game_hash[:home][:players].each do |key, value|
+   empty.push(game_hash[:home][:players][key][:number])
+   end
+   empty
+ else
+   game_hash[:away][:players].each do |key, value|
+   empty.push(game_hash[:away][:players][key][:number])
+   end
+   empty
+   
+end
+end

@@ -28,12 +28,12 @@ def team_colors(str)
      game_hash[:home][:colors]
    else
      game_hash[:away][:colors]
-     
+
    end
  end
 
 
- 
+
    def team_names()
      empty = []
      empty.push(game_hash[:home][:team_names], game_hash[:away][:team_names])
